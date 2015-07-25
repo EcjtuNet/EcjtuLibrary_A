@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<title>图书馆管理系统</title>
+	<meta charset="utf-8">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+   	<link href="css/index.css" rel="stylesheet" type="text/css">
+   	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div id="left-section">
+		<div id="side_bar">
+			<div class="side_top" onclick="menu()">
+				<div class="side_top_menu" id="menu" style="display:none;">
+					<div class="side_top_return">
+					</div>
+					<div class="side_top_choose">
+						<ul>
+							<li><a href="">读者借阅查询</a></li>
+							<li><a href="">馆藏书目查询</a></li>
+							<li><a href="">硕士论文提交</a></li>
+							<li><a href="">昌北高校图书馆联盟</a></li>
+							<li><a href="">中国图书分类法</a></li>
+							<li><a href="">中外文核心期刊目录</a></li>
+							<li><a href="">图书分布情况</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="side_box">
+				<ul>
+					<li class="side_man">
+						<div class="side_man_detail side_detail">
+							<span>学科馆员</span>
+						</div>
+					</li>
+					<li class="side_msg">
+						<div class="side_msg_detail side_detail">
+							<span>邮箱咨询</span>
+						</div>
+					</li>
+					<li class="side_pho">
+						<div class="side_pho_detail side_detail">
+							<span>联系电话</span>
+						</div>
+					</li>
+					<li class="side_qq">
+						<div class="side_qq_detail side_detail">
+							<span>在线咨询</span>
+						</div>
+					</li>
+					<li class="side_weibo">
+						<div class="side_weibo_detail side_detail">
+							<span>官方微博</span>
+						</div>
+					</li>
+					<li class="side_weixin">
+						<div class="side_weixin_detail side_detail">
+							<span>官方微信</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="right-section">
+		<div id="nav">
+			<div id="aa">
+				<div class="tri_ne"></div>
+				<a href="#" class="aa">旧</a>
+			</div>
+			<div class="nav_list">
+				<ul>
+					<li class="nav_list_c">
+						<a href="">设为首页</a>
+					</li>
+					<li class="nav_list_c">
+						<a href="">收藏本站</a>
+					</li>
+					<li class="nav_list_c">
+						<a href="">交大首页</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+       <div id="header">
+            <div class="sname"></div>
+            <div class="lname"></div>
+            <div class="book2"></div>
+                <div id="header_list">
+                    <ul>
+                        <li class="left_pic"></li>
+                        <li class="hlist_child">本地概况
+                            <ul>
+                            	<li class="s_tri"></li>
+                                <li><a href="#">本馆介绍</a></li>
+                                <li><a href="#">组织机构</a></li>
+                                <li><a href="#">平面布局</a></li>
+                                <li><a href="#">规章制度</a></li>
+                            </ul>
+                        </li>
+                        <li class="hlist_child">读者服务
+                            <ul>
+                            	<li class="s_tri"></li>
+                                <li><a href="#">入馆须知</a></li>
+                                <li><a href="#">借阅规则</a></li>
+                                <li><a href="#">开放时间</a></li>
+                                <li><a href="#">图书推荐</a></li>
+                            </ul>
+                        </li>
+                        <li class="hlist_child">参考咨询
+                            <ul style="width:127px;margin-left:-30px;">
+                            	 <li class="l_tri"></li>
+                                <li style="width:127px;"><a href="#" style="width:127px;">参考服务</a></li>
+                                <li style="width:127px;"><a href="#" style="width:127px;">文献传递</a></li>
+                                <li style="width:127px;"><a href="#" style="width:127px;">堵着培训</a></li>
+                                <li style="width:127px;"><a href="#" style="width:127px;">代办查新、收引</a></li>
+                            </ul>
+                        </li>
+                        <li class="hlist_child">党群园地
+                            <ul>
+                            	 <li class="s_tri"></li>
+                                <li><a href="#">党建之窗</a></li>
+                                <li><a href="#">职工风采</a></li>
+                            </ul>
+                        </li>
+                        <li class="hlist_child"><a href="#">教材服务</a></li>
+                        <li class="right_pic"></li>
+                    </ul>
+                 </div>
+        	</div>
+
+
+	        <div id="middle-wrapper1">
+
+		        <div id="login">
+		            <div id="book"></div>
+		            <div id="login_logo"><a href="#"></a></div>
+					<div class="box">
+						<div>
+							<input type="text" value="登录方式" class="login_fs login_color" id="in" onclick="login();">
+							<ul id="gin">
+								<li onclick="show1();">学（工）号</li>
+								<li onclick="show2();">借书证号</li>
+							</ul>
+						</div>
+						<input type="text" value="学(工) / 证号" class="login_color login_id">
+						<input type="text" value="密码" class="login_color login_pw">
+					</div>
+					<div id="box_button">
+						<div class="login_add"></div>
+						<div class="login_lock"></div>
+					</div>
+		         </div>	
+
+		        <div id="metro">
+	    			<table class="metro">
+	        			<tr>
+							<td class="mtro_c"></td>
+	    					<td class="mtro_c"></td>
+		             		<td class="mtro_c"></td>
+		             		<td class="mtro_c green tab7">
+		               			<a href="#">
+		                    		<div class="mask">
+		                        		<h3>试用数据库</h3>
+		                       			<p>包含了各类中外文试用的各种形式的电子资源</p>
+		                    		</div>
+		                		</a>
+	                        </td>
+		             		<td class="mtro_c deep_gray"></td>
+		             		<td class="mtro_c"</td>
+	           			</tr>
+	            		<tr>
+				           	<td class="mtro_c green tab1 bb">
+	                            <a href="#">
+	                                <div class="mask">
+	                                    <h3>个人信息</h3>
+	                                </div>
+	                            </a>
+	                        </td>
+	                        <td class="mtro_c blue tab2">
+	                            <a href="#">
+	                                <div class="mask">
+	                                    <h3>中文数据库</h3>
+	                                    <p>包含学术期刊、学术论文、电子图书，学术视频等中文电子资源</p>
+	                                </div>
+	                            </a>
+	                        </td>
+	                        <td class="mtro_c light_gray"></td>
+	                        <td class="mtro_c deep_gray"></td>
+	                        <td class="mtro_c green tab5">
+	                            <a href="#">
+	                  				<div class="mask">
+	                					<h3>学科导航</h3>
+	                					<p>包含本校相关十类专业的相关动态和资源</p>
+	                  				</div>
+	                            </a>
+	                        </td>
+	                        <td class="mtro_c deep_gray"></td>
+	            		</tr>
+	            		<tr>
+	                		<td class="mtro_c"></td>
+	              			<td class="mtro_c deep_gray"></td>
+	              			<td class="mtro_c blue tab10">
+	                  			<a href="#">
+	             			 	<div class="mask">
+		        					<h3>外文数据库</h3>
+		        					<p>包含英文学术期刊、英文电子图书等外文资源。</p>
+	              				</div>
+	                  			</a>
+	              			</td>
+	              			<td class="mtro_c"></td>
+	              			<td class="mtro_c"></td>
+	              			<td class="mtro_c light_gray tab11 bb">
+	                  			<a href="#">
+	                  				<div class="mask">
+	                    				<h3>站内搜索</h3>
+	                  				</div>
+	                  			</a>
+	              			</td>
+	        			</tr>
+	        		</table>
+	    		</div>
+		    </div>
+
+	        <div id="middle-wrapper2">
+	         	<div id="search">
+	         		<p>
+						<span id="f0">昌</span>
+						<span id="f1">北</span>
+						<span id="f2">高</span>
+						<span id="f3">校</span>
+						<span id="f4">数</span>
+						<span id="f5">字</span>
+						<span id="f6">图</span>
+						<span id="f7">书</span>
+						<span id="f8">馆</span>	
+					</p>
+					<div class="search_select">
+						<ul>
+							<li class="search_list">
+								<a href="javascript:animate(1)" id="a1">知识</a>
+							</li>
+							<li class="search_list">
+								<a href="javascript:animate(2)" id="a2">图书</a>
+							</li>
+							<li class="search_list">
+								<a href="javascript:animate(3)" id="a3">期刊</a>
+							</li>
+							<li class="search_list">
+								<a href="javascript:animate(4)" id="a4">报纸</a>
+							</li>
+							<li class="search_list">
+								<a href="javascript:animate(5)" id="a5">论文</a>
+							</li>
+							<li class="search_list">
+								<a href="javascript:animate(6)" id="a6">专利</a>
+							</li>
+							<li class="search_list">
+								<a href="javascript:animate(7)" id="a7">标准</a>
+							</li>
+							<li class="search_list">
+								<a href="javascript:animate(8)" id="a8">视频</a>
+							</li>
+						</ul>
+					</div>
+					<div id="search_which"></div>
+					<div class="search_box">
+						<div class="search_input">
+							<input type="text" value="">
+						</div>
+					<div class="search_help">
+						<a href="" class="search_help_bottom">高级检索</a>
+						<a href="">使用帮助</a>
+					</div>
+				</div>
+				<div class="search_check">
+					<ol>
+						<li class="search_check_right search_check_img"  >作者</li>
+						<li class="search_check_right search_check_img"  >书名</li>
+						<li class="search_check_img" >全部字段</li>
+					</ol>
+				</div>
+	             	</div>
+
+
+	            <div id="news">
+	             	<div class="news_title">
+					   <a href="" class="new_title_chose" id="t1" onmouseover="over1();">新闻公告</a>
+					   <a href="" class="new_title_color" id="t2" onmouseover="over2();">资源动态</a>
+					   <a href="" class="new_title_more">MORE</a>
+					</div>
+					<div class="news_contens">
+						<div class="new_news">
+							<a href="">
+								<p>关于暑假期间图书馆开放安排的通知</p>
+								<span>2015-07-07</span>
+							</a>
+						</div>
+						<div class="new_news">
+							<a href="">
+								<p>关于2015年硕士毕业生提交学位论文的通知</p>
+								<span>2015-08-10</span>
+							</a>
+						</div>
+						<div class="new_news">
+							<a href="">
+								<p>我馆在昌北联盟游泳比赛中荣获佳绩</p>
+								<span>2015-05-28</span>
+							</a>
+						</div>
+						<div class="new_news">
+							<a href="">
+								<p>“我与图书馆”微电影大赛通知</p>
+								<span>2015-04-22</span>
+							</a>
+						</div>
+						<div class="new_news">
+							<a href="">
+								<p>我校选手再次在搜索竞赛中获得佳绩</p>
+								<span>2015-05-25</span>
+							</a>
+						</div>
+					</div>
+	        	</div>
+	    </div>
+
+	    <div id="footer">
+	        <div id="foot_wrapper">
+	            <div class="foot_list">
+	                <ul>
+        				<li >
+            				<a href="#" class="list_word">读者学社</a>
+        				</li>
+        				<li>
+            				<a href="#" class="list_word">图书捐赠</a>
+        				</li>
+         				<li>
+            				<a href="#" class="list_word">软件下载</a>
+        				</li>
+         				<li>
+            				<a href="#" class="list_word">馆藏统计</a>
+        				</li>
+         				<li>
+           					<a href="#" class="list_word">社会化服务</a>
+        				</li>
+         				<li>
+            				<a href="#" class="list_word">交大VPN</a>
+        				</li>
+         				<li>
+            				<a href="#" class="list_word">移动图书馆</a>
+        				</li>
+	                </ul>
+	            </div>
+	            <p class="foot_word">COPYRIGHT@2012 &nbsp;&nbsp;版权所有：图书馆信息技术部&nbsp;&nbsp;&nbsp;&nbsp;Allright Reserved 2012年9月</p>
+	        </div>
+	 	</div>
+	</div>
+</body>
+</html>
